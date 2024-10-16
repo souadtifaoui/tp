@@ -1,3 +1,10 @@
+1. A l'aide du terminal, créez un dossier "CC_nom_prenom" dans lequel vous initialiserez un repository git.
+
+mkdir CC_tifaoui_souad
+cd CC_tifaoui_souad
+git init
+
+
 2. Qu'est ce que Git et à quoi sert-il ? 
 un système de contrôle de version , libre et gratuit concu pour gerer rapidement et efficacement tous les projets , de plus petits aux plus grands 
 
@@ -7,8 +14,76 @@ git C'est un logiciel de contrôle de version (VCS) par contre github C'est une 
 4. Donnez les deux espaces dans lesquels peuvent se trouver les fichiers avant de réaliser un commit.
 Le Working Directory: les fichiers ajoutés via git add sont préparés pour le prochain commit 
 Le Staging Area: les fichiers modifiés mais non encore ajoutés a staging area .
-6. les méthodes de création de branche :
- git branch nom_branche
- git checkout -b nom_branche 
- utiliser une interface graphique 
+
+
+QUESTIONS PRATIQUES. 
+
+5. Après avoir répondu aux questions de cours, ajoutez ce fichier dans votre repo et faites votre premier commit. 
+git add .
+git commit -m "réponces"
+
+6. Créez une branche feature et placez vous dessus. Donnez les 3 méthodes de création de branche. 
+git branch feature
+git checkout feature
+Méthodes de création de branche :
+git branch nom_de_branche
+git checkout -b nom_de_branche
+git switch -c nom_de_branche
+
+7. Ajoutez un fichier texte film.txt à votre dossier et écrivez votre film préféré à l'intérieur. 
+echo "" > film.txt
+
+8. Ajoutez un fichier texte serie.txt à votre dossier et écrivez votre série préférée à l'intérieur.
+echo "" > serie.txt 
+
+9. Faites un commit en ajoutant uniquement le fichier film.txt à votre commit. 
+git add film.txt
+git commit -m "Ajout"
+
+10. Ajoutez un fichier citation.txt dans lequel vous écrirez votre citation préférée. 
+echo "" > citation.txt
+
+11. Faites un commit qui ajoute toutes les modifications. 
+git add .
+git commit -m "citation"
+
+12. Sur une nouvelle branche add_images, créez un fichier "ignore.txt" et ignorez le. Vous ferez ensuite un capture d'écran qui montre que le 
+fichier est bien ignoré et vous ajouterez cette capture dans un dossier "images". Vous pourrez ensuite commit les changements.
+git checkout -b images
+echo "ignore.txt" > .gitignore
+echo "" > ignore.txt
+
+13. Faites une capture d'écran de vos branches et ajoutez la au dossier image et faites un commit.
+mkdir images
+mv capture.png images/
+git add images/capture.png
+git commit -m ""
+
+14. Mergez vos branches feature et add_images dans master. 
+git checkout master
+git merge feature
+git merge images
+
+15. Faites une capture d'écran de l'historique de vos commit sur master, ajoutez la au dossier image et faites un commit. 
+git log 
+git add .
+git commit -m historique
+
+16. Créez un repo en ligne dans lequel vous pousserez votre dossier. 
+git remote origin add origin https://github.com/souadtifaoui/tp.git
+git push -u origin master
+
+17. Sur GitHub, créez un nouveau fichier origin.txt sur la branche master. Puis tirez le dans votre repo local.
+git pull origin master
+
+18. Créez une nouvelle branche feedback, ajoutez un fichier feedback.txt dans lequel vous écrirez votre feedback sur le cours
+(vous ne serez ni avantagé ni pénalisé selon le feedback). Créez ensuite une Pull Request et mergez la dans master depuis GitHub.
+git checkout -b feedback
+echo "" > feedback.txt
+git add feedback.txt
+git commit -m feedback
+git push origin feedback
+
+
+https://github.com/souadtifaoui/tp
 

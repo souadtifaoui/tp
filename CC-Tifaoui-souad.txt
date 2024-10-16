@@ -1,0 +1,15 @@
+2. Qu'est ce que Git et à quoi sert-il ? 
+un système de contrôle de version , libre et gratuit concu pour gerer rapidement et efficacement tous les projets , de plus petits aux plus grands 
+
+3. Comparez Git et GitHub.
+git C'est un logiciel de contrôle de version (VCS) par contre github C'est une plateforme en ligne (basée sur le cloud) qui héberge des dépôts Git
+
+4. Donnez les deux espaces dans lesquels peuvent se trouver les fichiers avant de réaliser un commit.
+Le Working Directory: les fichiers ajoutés via git add sont préparés pour le prochain commit 
+Le Staging Area: les fichiers modifiés mais non encore ajoutés a staging area .
+6. les méthodes de création de branche :
+ git branch nom_branche
+ git checkout -b nom_branche 
+ utiliser une interface graphique 
+https://github.com/souadtifaoui/tp
+

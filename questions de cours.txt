@@ -1,0 +1,10 @@
+2. Qu'est ce que Git et à quoi sert-il ? 
+un système de contrôle de version , libre et gratuit concu pour gerer rapidement et efficacement tous les projets , de plus petits aux plus grands 
+
+3. Comparez Git et GitHub.
+git C'est un logiciel de contrôle de version (VCS) par contre github C'est une plateforme en ligne (basée sur le cloud) qui héberge des dépôts Git
+
+4. Donnez les deux espaces dans lesquels peuvent se trouver les fichiers avant de réaliser un commit.
+Le Working Directory
+Le Staging Area
+
